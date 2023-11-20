@@ -103,7 +103,7 @@ public class TestWithElements {
         action.moveToElement(pButton).click().build().perform();
         WebElement userPassword = driver.findElement(By.cssSelector("input[type=\"password\"]"));
         action.moveToElement(userPassword).sendKeys(PASSWORD).perform();
-        WebElement lButton = driver.findElement(By.cssSelector(".gYNtqF"));
+        WebElement lButton= driver.findElement(By.xpath("//div[contains(text(),'Войти')]"));
         action.moveToElement(lButton).click().build().perform();
     }
 
